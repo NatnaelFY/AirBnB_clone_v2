@@ -2,7 +2,7 @@
 """Starts a Flask web application.
 The application listens on 0.0.0.0, port 5000.
 Routes:
-    /: Displays 'Hello HBNB!'
+    /: Displays 'Hello route!'
 """
 from flask import Flask
 
@@ -10,9 +10,9 @@ app = Flask(__name__)
 
 
 @app.route("/", strict_slashes=False)
-def hello_hbnb():
-    """Displays 'Hello HBNB!'"""
-    return "Hello HBNB!"
+def hello_route():
+    """Displays 'Hello route!'"""
+    return "Hello route!"
 
 
 if __name__ == "__main__":
